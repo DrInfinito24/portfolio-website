@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarViewer - Details</title>
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- NEW: Load Custom Font via URL (Montserrat from Google Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- START Customization Variables --- */
+        :root {
+            /* 1. ACCENT COLOR: Change this HEX code to your desired color (e.g., #ef4444 for red) */
+            --color-accent: #0a0a80; 
+            
+            /* 2. FONT FAMILY: Uses the font loaded above (Montserrat) as the primary font */
+            --font-family: 'Rubik', sans-serif;
+        }
+        /* --- END Customization Variables --- */
+
+        /* Global styles applying the variables */
+        body {
+            font-family: var(--font-family);
+            min-height: 100vh;
+            margin: 0;
+            padding: 2rem 1rem;
+            
+            /* Subtler Background Image Configuration for consistency */
+            background-image: 
+                              url('assets/starfield2.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        /* Custom classes to apply the accent color via CSS variable */
+        .text-accent { color: var(--color-accent); }
+        .bg-accent { background-color: var(--color-accent); }
+        .border-accent { border-color: var(--color-accent); }
+    </style>
+</head>
+<body>
+
+    <!-- Main Content Container: Centered and constrained --><div class="w-full max-w-5xl mx-auto bg-[#506DAF] p-6 md:p-12 shadow-2xl transition-all duration-300 border-8 border-[#0C1633]">
+        
+        <!-- Header with Project Title and Navigation (Download button removed) --><header class="mb-10 flex flex-col md:flex-row md:justify-between md:items-center border-b pb-4">
+            <h1 class="text-4xl font-extrabold text-gray-800 text-accent tracking-tight mb-4 md:mb-0">
+                StarViewer
+            </h1>
+            <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                <!-- Button to Return to Projects Page -->
+                <!-- Uses custom classes for text and border color -->
+                <a href="projects.html"
+                    class="px-5 py-2 text-sm font-medium text-white font-semibold border-4 border-gray-800 bg-[#6250AF] hover:bg-[#509DAF] transition duration-300 transform hover:scale-[1.03] focus:outline-none focus:ring-2 focus:ring-indigo-300">
+                    &larr; Back to Projects
+                </a>
+            </div>
+        </header>
+
+        <!-- Main Project Content --><main class="space-y-10">
+
+            <!-- Large Project Image --><div class="overflow-hidden shadow-xl border border-4 border-[#0C1633]">
+                <img src="assets/starss.png" 
+                     alt="Main Project Image for [Your Project Title Here]" 
+                     class="w-full h-auto object-cover max-h-[500px]">
+            </div>
+            
+            <!-- NEW: Project Images & Videos Gallery -->
+            <div>
+                <h2 class="text-3xl font-semibold text-gray-800 mb-5 border-b pb-3">
+                    Screenshots
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <!-- Image 1 -->
+                    <img src="assets/star1.png" 
+                         alt="Project Screenshot 1" 
+                         class="w-full h-auto object-cover shadow-md border border-4 border-[#0C1633]">
+                    <!-- Video Placeholder (Replace this div with an actual iframe for embedded video) -->
+                    <!-- Image 2 -->
+                    <img src="assets/star2.png" 
+                         alt="Project Screenshot 2" 
+                         class="w-full h-auto object-cover shadow-md border border-4 border-[#0C1633]">
+                </div>
+            </div>
+
+            <!-- Project Overview --><div>
+                <h2 class="text-3xl font-semibold text-gray-800 mb-5 border-b pb-3">
+                    Project Overview
+                </h2>
+                <p class="text-lg text-gray-800 leading-relaxed mb-4">
+                    StarViewer is a prototype for a planetarium software in Unity.<br>
+                    <br>
+                    It currently displays stars in a globe around the camera.<br>
+                    <br>
+                    The stars, its position and colours are taken from the Yale Bright Star Catalogue.<br>
+                </p>
+            </div>
+
+            <!-- Key Features & Technologies --><div>
+                <h2 class="text-3xl font-semibold text-gray-800 mb-5 border-b pb-3">
+                    Features and Tools used
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-medium text-gray-800 mb-3">Key Features</h3>
+                        <ul class="list-disc list-inside text-lg text-gray-800 space-y-2">
+                            <li>Stars are displayed realistically based on their position and colour</li>
+                            <li>Shader used to lower performance</li>
+                            <li>User can move the camera to view different part of the night sky</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-medium text-gray-800 mb-3">Technologies Used</h3>
+                        <ul class="list-disc list-inside text-lg text-gray-800 space-y-2">
+                            <li>Developed using Unity</li>
+                            <li>Created using the tutorial by Firnox - https://www.youtube.com/watch?v=5Z_PvN6NMb0</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Development Process --><div>
+                <h2 class="text-3xl font-semibold text-gray-800 mb-5 border-b pb-3">
+                    Development Process
+                </h2>
+                <p class="text-lg text-gray-800 leading-relaxed mb-4">
+                    This was developed as a side project, as I wanted to explore if it would be possible to create a planetarium software in Unity. I then came across
+                    Firnox's tutorials, followed them to create this prototype. In the curernt state, this prototype does not have the capability to display constellations,
+                    as that part of the tutorial was not reached yet.
+                </p>
+            </div>
+
+            <!-- Lessons Learned & Future Improvements --><div>
+                <h2 class="text-3xl font-semibold text-gray-800 mb-5 border-b pb-3">
+                    Reflections
+                </h2>
+                <p class="text-lg text-gray-800 leading-relaxed mb-4">
+                   This project was interesting, as it showed that a planetarium software was not as difficult as I thought it was to implement. In its current state, it is 
+                   somewhat useful as a way to view the night sky, but it needs to have more functionality to be truly useful.
+                </p>
+            </div>
+
+            <!-- Download Button (Moved from Header)<div class="flex flex-wrap justify-center pt-6">
+
+                <a href="[link-to-project-download.zip]" 
+                   download 
+                   class="px-8 py-3 text-lg font-semibold text-white bg-accent shadow-xl hover:opacity-90 transition duration-300 transform hover:scale-[1.05] bg-[#5AA2C4] border-4 border-[#0C1633]">
+                    Download Project &darr;
+                </a>
+            </div> -->
+
+        </main>
+
+        <!-- Footer (reused for consistency) --><footer class="mt-16 text-center text-gray-100 text-sm border-t pt-4">
+            &copy; 2025 Patrick Nunn. All rights reserved.
+        </footer>
+
+    </div>
+
+</body>
+</html>

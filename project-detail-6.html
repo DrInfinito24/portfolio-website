@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League modifications - Details</title>
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- NEW: Load Custom Font via URL (Montserrat from Google Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- START Customization Variables --- */
+        :root {
+            /* 1. ACCENT COLOR: Change this HEX code to your desired color (e.g., #ef4444 for red) */
+            --color-accent: #0a0a80; 
+            
+            /* 2. FONT FAMILY: Uses the font loaded above (Montserrat) as the primary font */
+            --font-family: 'Rubik', sans-serif;
+        }
+        /* --- END Customization Variables --- */
+
+        /* Global styles applying the variables */
+        body {
+            font-family: var(--font-family);
+            min-height: 100vh;
+            margin: 0;
+            padding: 2rem 1rem;
+            
+            /* Subtler Background Image Configuration for consistency */
+            background-image: 
+                              url('assets/starfield2.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        /* Custom classes to apply the accent color via CSS variable */
+        .text-accent { color: var(--color-accent); }
+        .bg-accent { background-color: var(--color-accent); }
+        .border-accent { border-color: var(--color-accent); }
+    </style>
+</head>
+<body>
+
+    <!-- Main Content Container: Centered and constrained --><div class="w-full max-w-5xl mx-auto bg-[#506DAF] p-6 md:p-12 shadow-2xl transition-all duration-300 border-8 border-[#0C1633]">
+        
+        <!-- Header with Project Title and Navigation (Download button removed) --><header class="mb-10 flex flex-col md:flex-row md:justify-between md:items-center border-b pb-4">
+            <h1 class="text-4xl font-extrabold text-gray-800 text-accent tracking-tight mb-4 md:mb-0">
+                League of Legends modifications
+            </h1>
+            <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                <!-- Button to Return to Projects Page -->
+                <!-- Uses custom classes for text and border color -->
+                <a href="projects.html"
+                    class="px-5 py-2 text-sm font-medium text-white font-semibold border-4 border-gray-800 bg-[#6250AF] hover:bg-[#509DAF] transition duration-300 transform hover:scale-[1.03] focus:outline-none focus:ring-2 focus:ring-indigo-300">
+                    &larr; Back to Projects
+                </a>
+            </div>
+        </header>
+
+        <!-- Main Project Content --><main class="space-y-10">
+
+            <!-- Large Project Image --><div class="overflow-hidden shadow-xl border border-4 border-[#0C1633]">
+                <img src="assets/ingame.png" 
+                     alt="Main Project Image for [Your Project Title Here]" 
+                     class="w-full h-auto object-cover max-h-[500px]">
+            </div>
+            
+            <!-- NEW: Project Images & Videos Gallery -->
+            <div>
+                <h2 class="text-3xl font-semibold text-gray-800 mb-5 border-b pb-3">
+                    Screenshots & Media
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <!-- Image 1 -->
+                    <img src="assets/Saul1.png" 
+                         alt="Project Screenshot 1" 
+                         class="w-full h-auto object-cover shadow-md border border-4 border-[#0C1633]">
+                   
+                    <!-- Image 2 -->
+                    <img src="assets/Gman1.png" 
+                         alt="Project Screenshot 2" 
+                         class="w-full h-auto object-cover shadow-md border border-4 border-[#0C1633]">
+                    <!-- Image 3 -->
+                    <img src="assets/FootSoldier1.png" 
+                         alt="Project Screenshot 3" 
+                         class="w-full h-auto object-cover shadow-md border border-4 border-[#0C1633]">
+                                             <!-- Image 3 -->
+                    <img src="assets/Ziggs2.png" 
+                         alt="Project Screenshot 3" 
+                         class="w-full h-auto object-cover shadow-md border border-4 border-[#0C1633]">
+                </div>
+            </div>
+
+            <!-- Project Overview --><div>
+                <h2 class="text-3xl font-semibold text-gray-800 mb-5 border-b pb-3">
+                    Project Overview
+                </h2>
+                <p class="text-lg text-gray-800 leading-relaxed mb-4">
+                    This is a compilation of League of Legend modifications, that modify the playable character ingame, or other elements of the gameplay.<br>
+                    <br>
+                    The 3D models were created using Maya, while other assets were made using GIMP and Audacity.<br>
+                    <br>
+                    These mods are popular, gaining over 100,000 views combined.<br>
+                </p>
+            </div>
+
+            <!-- Key Features & Technologies --><div>
+                <h2 class="text-3xl font-semibold text-gray-800 mb-5 border-b pb-3">
+                    Features and Tools used
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-medium text-gray-800 mb-3">Key Features</h3>
+                        <ul class="list-disc list-inside text-lg text-gray-800 space-y-2">
+                            <li>Includes 3D models rigged to exisiting skeletons and animations</li>
+                            <li>Modification of the HUD, including player and skill icons</li>
+                            <li>New sounds and particles effects to complement the modification</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-medium text-gray-800 mb-3">Technologies Used</h3>
+                        <ul class="list-disc list-inside text-lg text-gray-800 space-y-2">
+                            <li>Developed using various tools, including Maya, GIMP and Audacity</li>
+                            <li>Posted on forums and Youtube</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Development Process --><div>
+                <h2 class="text-3xl font-semibold text-gray-800 mb-5 border-b pb-3">
+                    Development Process
+                </h2>
+                <p class="text-lg text-gray-800 leading-relaxed mb-4">
+                  These modifications were developed through learning different skills gradually. Firstly replacing sounds, then icons, then 3D model. The development
+                  of these modifications were motivated by the community built around them, including some streamers.
+                </p>
+            </div>
+
+            <!-- Lessons Learned & Future Improvements --><div>
+                <h2 class="text-3xl font-semibold text-gray-800 mb-5 border-b pb-3">
+                    Reflections
+                </h2>
+                <p class="text-lg text-gray-800 leading-relaxed mb-4">
+                   Working on this project exposed me to various specialised softwares, which allowed me to broaded my horizon. This project also led me to deal with 
+                   questions and requests from the people who used my modifications, which meant I had to help them out in whatever way I could.
+                </p>
+            </div>
+
+            <!-- Download Button (Moved from Header) --><div class="flex flex-wrap justify-center pt-6">
+                <!-- Uses custom class for background color -->
+                <a href="https://www.youtube.com/@drinfinito" 
+                   download 
+                   class="px-8 py-3 text-lg font-semibold text-white bg-accent shadow-xl hover:opacity-90 transition duration-300 transform hover:scale-[1.05] bg-[#5AA2C4] border-4 border-[#0C1633]">
+                    View Other Projects &darr;
+                </a>
+            </div>
+
+        </main>
+
+        <!-- Footer (reused for consistency) --><footer class="mt-16 text-center text-gray-100 text-sm border-t pt-4">
+            &copy; 2025 Patrick Nunn. All rights reserved.
+        </footer>
+
+    </div>
+
+</body>
+</html>
